@@ -58,12 +58,63 @@
 <br>
 <br>
 
+  <style>
+    .box {
+	    display: inline-block;
+	    box-sizing: border-box;
+        position: relative;
+        float: center;
+        width: 800px;
+        height: 50px;
+        max-width:100%;
+        flex-shrink: 2;
+        background: lightblue; 
+        overflow: auto;
+}
+    .box2 {
+	    display: inline-block;
+	    box-sizing: border-box;
+        position: relative;
+        float: center;
+        width: 800px;
+        height: 400px;
+        background: royalblue; 
+        overflow: auto;
+}
+    .box3 {
+	    display: inline-block;
+	    box-sizing: border-box;
+        position: relative;
+        float: center;
+        width: 800px;
+        height: 200px;
+        background: lightgreen;
+        overflow: auto;
+}
+  </style>
   
 <body>
 
+<div class="container">     
+    <div class="row">
+        <div class="card-deck">
+            <div class="d-flex flex-column">
+                <div align=center class=box>Main Content</div><br>
+                <div align=center class=box2>Section 1</div> <br>
+                <div align=center class=box3>Section 2</div>
+            </div>
+        <div class="col-sm">
+            <div class="card-header">Header</div>
+            <div class="card-block"></div>
+                <h4 class="card-title">Card Title</h4>
+                    <p class="card-text">Researchers who study social media said the indictment, secured by special counsel Robert Mueller, showed that Facebook was ill-prepared for such efforts. Facebook has more than 25,000 employees, but fewer than 100 Russian provocateurs armed with social-media savvy and widely available.
+                    
+                <div class="card-footer">Footer</div>
+            </div>
+        </div>
+
 </body>
  
-
 <footer>
 
 <div class="container fixed-bottom">
@@ -71,15 +122,6 @@
 <p> 1250 Bellflower Boulevard Long Beach, CA 90840 562.985.4111 </p>
 	</div>
 </footer>
-
-
- 
-</html>
-  
-
-
-
-    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
