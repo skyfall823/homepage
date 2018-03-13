@@ -1,18 +1,24 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 4</title>
+</head>
 
-<html>
 
 <body onload="loadUsersJson(); loadUserJSONUseFetch();">
 
-<h2>Using XMLHttpRequest</h2>
+<h3><i>User emails from XMLHttpRequest:</i></h3>
 
-<div id="XMLHttpRequestDemo" style="color: blue; font-style: italic; word-wrap: break-word;">
+<div id="XMLHttpRequest" style="color: blue; font-style: italic; word-wrap: break-word;">
 
 </div>
 
-<h2>Using fetch()</h2>
+<h3><i>User usernames from fetch:</i></h3>
 
-<div id="fetchRequestDemo" style="color: blue; font-style: italic;word-wrap: break-word;">
+<div id="fetchRequest" style="color: blue; font-style: italic;word-wrap: break-word;">
 
 </div>
 
@@ -48,7 +54,7 @@ xhttp.onreadystatechange = function() {
 
               }
 
-              document.getElementById("XMLHttpRequestDemo").innerHTML = jsonArray;
+              document.getElementById("XMLHttpRequest").innerHTML = jsonArray;
 
               }
 
@@ -98,7 +104,7 @@ function loadUserJSONUseFetch(){
 
                      }
 
-                     document.getElementById("fetchRequestDemo").innerHTML = jsonArray;
+                     document.getElementById("fetchRequest").innerHTML = jsonArray;
 
              });
 
