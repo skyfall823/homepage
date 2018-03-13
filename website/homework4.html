@@ -50,7 +50,7 @@ xhttp.onreadystatechange = function() {
 // Using Fetch      
 
 function loadUserJSONUseFetch(){
-       fetch('https://jsonplaceholder.typicode.com/users')
+       fetch("https://jsonplaceholder.typicode.com/users")
        .then(
            function(response) {
               console.log(response);
@@ -76,7 +76,7 @@ function loadUserJSONUseFetch(){
            }
        )
        .catch(function(err) {
-           console.log('Fetch Error :-S', err);
+           console.log("Fetch Error :-S", err);
        });
 }
 
